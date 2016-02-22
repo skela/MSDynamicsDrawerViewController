@@ -74,7 +74,7 @@ NSString * const MSStylerDirectionCellReuseIdentifier = @"Styler Direction Cell"
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:MSStylerDirectionCellReuseIdentifier];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskAllButUpsideDown;
 }

@@ -104,7 +104,7 @@ typedef NS_ENUM(NSUInteger, MSMenuViewControllerTableViewSectionType) {
     self.tableView.separatorColor = [UIColor colorWithWhite:1.0 alpha:0.25];
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskAllButUpsideDown;
 }
