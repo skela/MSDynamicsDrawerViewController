@@ -428,7 +428,7 @@ void MSDynamicsDrawerDirectionActionForMaskedValues(NSInteger direction, MSDynam
     if (self.paneViewController != paneViewController) {
         [self.paneViewController willMoveToParentViewController:nil];
         [self.paneViewController beginAppearanceTransition:NO animated:animated];
-        void(^transitionToNewPaneViewController)() = ^{
+        void(^transitionToNewPaneViewController)(void) = ^{
             [paneViewController willMoveToParentViewController:self];
             [self.paneViewController.view removeFromSuperview];
             [self.paneViewController removeFromParentViewController];
